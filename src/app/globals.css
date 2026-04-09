@@ -1,0 +1,18 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css");
+@import "tailwindcss";
+
+:root {
+  --font-nanum: "NanumSquare", sans-serif;
+}
+
+/*  Tailwind의 기본 샌세리프 폰트를 나눔스퀘어로 정의 */
+@theme inline {
+  /* 폰트 */
+  --font-sans: var(--font-nanum);
+}
+
+body {
+  font-family: var(--font-nanum);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
